@@ -17,16 +17,16 @@
           <legend>Dados Pessoais</legend>
           <label for="userName">Nome</label>
           <input type="text" name="userName" required />
-
+          <br />
           <label for="userAge">Idade</label>
           <input type="number" name="userAge" min="12" max="100" required />
-
+          <br />
           <label for="birthDate">Data de nascimento</label>
           <input type="date" name="birthDate" required />
-
+          <br />
           <label for="userEmail">Email</label>
           <input type="email" name="userEmail" required />
-
+          <br />
           <label for="userPhoneNumber">Telefone</label>
           <input
             type="tel"
@@ -35,11 +35,23 @@
             placeholder="DDD + número sem espaços ou hífen"
             required
           />
-
+          <br />
           <label for="userImage">Upload de foto</label>
           <input type="file" accept="image/*" name="userImage" />
         </fieldset>
 
+        <fieldset>
+          <legend>Perfil</legend>
+
+          <p>GêneroÇ</p>
+          <input type="radio" name="userGender" value="feminino" />
+          <label for="userGender">feminino</label>
+
+          <input type="radio" name="userGender" value="masculino" />
+          <label for="userGender">Masculino</label>
+          <input type="radio" name="userGender" value="notInformed" />
+          <label for="userGender">Prefiro não informar</label>
+        </fieldset>
         <button type="submit">Enviar</button>
       </form>
     </section>
