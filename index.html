@@ -123,7 +123,19 @@
           <br />
           <input id="twitter" type="checkbox" name="social" value="twitter" />
           <label for="twitter">Twitter</label>
+          <br />
+          <label for="musicStyle">Estilo musical:</label>
+          <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text">
+          <datalist id="styleTypes">
+            <option value="Rock">
+            <option value="Pop">
+            <option value="MPB">
+            <option value="Hip-hop">
+            <option value="Metal">
+            <option value="Ost">
+          </datalist>
         </fieldset>
+
         <button type="submit">Enviar</button>
       </form>
     </section>
